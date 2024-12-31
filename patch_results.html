@@ -1,0 +1,744 @@
+
+        <html>
+        <head>
+            <title>Patch Results</title>
+            <style>
+                table {
+                    border-collapse: collapse;
+                    width: 100%;
+                    margin: 20px 0;
+                }
+                th, td {
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                    text-align: left;
+                }
+                th {
+                    background-color: #f2f2f2;
+                }
+                tr:nth-child(even) {
+                    background-color: #f9f9f9;
+                }
+            </style>
+        </head>
+        <body>
+            <h1>Patch Results</h1>
+            <table>
+                <tr>
+                    <th>Address</th>
+                    <th>Field Name</th>
+                    <th>Field Type</th>
+                    <th>Value</th>
+                </tr>
+        
+                <tr>
+                    <td>RS UE</td>
+                    <td>blendMode</td>
+                    <td>string</td>
+                    
+                    <td>
+                        <select name="RS UE">
+                            <option value="Premult-Alpha" selected>Premult-Alpha</option>
+                            <option value="Over">Over</option><option value="Alpha">Alpha</option><option value="Add">Add</option><option value="Multiply">Multiply</option><option value="Mask">Mask</option><option value="Multiply-fade">Multiply-fade</option><option value="Multiply-alpha">Multiply-alpha</option><option value="Premult-Alpha">Premult-Alpha</option><option value="Screen">Screen</option><option value="Overlay">Overlay</option><option value="Hard Light">Hard Light</option><option value="Soft Light">Soft Light</option><option value="Colour Burn">Colour Burn</option><option value="Darken">Darken</option><option value="Lighten">Lighten</option><option value="Difference">Difference</option><option value="Exclusion">Exclusion</option><option value="Colour Dodge">Colour Dodge</option><option value="Hard Mix">Hard Mix</option><option value="Over-alpha">Over-alpha</option>
+                        </select>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>brightness</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="0" 
+                               max="1"
+                               value="0"
+                               step="0.001"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>tint.r</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="0" 
+                               max="1"
+                               value="0"
+                               step="0.001"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>tint.g</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="0" 
+                               max="1"
+                               value="0"
+                               step="0.001"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>tint.b</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="0" 
+                               max="1"
+                               value="0"
+                               step="0.001"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>mode</td>
+                    <td>string</td>
+                    
+                    <td>
+                        <select name="RS UE">
+                            <option value="Normal" selected>Normal</option>
+                            <option value="Locked">Locked</option><option value="Free-run">Free-run</option><option value="Normal">Normal</option><option value="Paused">Paused</option>
+                        </select>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>sceneName</td>
+                    <td>string</td>
+                    
+                    <td>
+                        <select name="RS UE">
+                            <option value="M_Abstract" selected>M_Abstract</option>
+                            <option value="M_Abstract">M_Abstract</option><option value="M_Abstract_backup">M_Abstract_backup</option><option value="M_Abstract_extra">M_Abstract_extra</option><option value="M_Abstract_Transitions">M_Abstract_Transitions</option><option value="ThirdPersonMap">ThirdPersonMap</option>
+                        </select>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>customEventTriggerMode</td>
+                    <td>string</td>
+                    
+                    <td>
+                        <select name="RS UE">
+                            <option value="On keyframe" selected>On keyframe</option>
+                            <option value="On keyframe">On keyframe</option><option value="On reset">On reset</option><option value="On change">On change</option>
+                        </select>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>CahceValues</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="0" 
+                               max="1"
+                               value="0"
+                               step="0.1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>UpdateLogo</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="0" 
+                               max="1"
+                               value="0"
+                               step="0.1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>UpdateMaterial</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="0" 
+                               max="1"
+                               value="0"
+                               step="0.1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>UpdatePips</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="0" 
+                               max="1"
+                               value="0"
+                               step="0.1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>UpdatePresentation</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="0" 
+                               max="1"
+                               value="0"
+                               step="0.1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>UpdateText</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="0" 
+                               max="1"
+                               value="0"
+                               step="0.1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>UpdateWorld</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="0" 
+                               max="1"
+                               value="0"
+                               step="0.1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>BackgroundStyle</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="0" 
+                               max="1"
+                               value="0"
+                               step="1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>Cue_Presentation_C</td>
+                    <td>string</td>
+                    
+                    <td>
+                        <select name="RS UE">
+                            <option value="Off" selected>Off</option>
+                            <option value="Off">Off</option><option value="On">On</option>
+                        </select>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>Cue_Presentation_L</td>
+                    <td>string</td>
+                    
+                    <td>
+                        <select name="RS UE">
+                            <option value="Off" selected>Off</option>
+                            <option value="Off">Off</option><option value="On">On</option>
+                        </select>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>Cue_Presentation_R</td>
+                    <td>string</td>
+                    
+                    <td>
+                        <select name="RS UE">
+                            <option value="Off" selected>Off</option>
+                            <option value="Off">Off</option><option value="On">On</option>
+                        </select>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>CueLogoOn_C</td>
+                    <td>string</td>
+                    
+                    <td>
+                        <select name="RS UE">
+                            <option value="Off" selected>Off</option>
+                            <option value="Off">Off</option><option value="On">On</option>
+                        </select>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>CueLogoOn_L</td>
+                    <td>string</td>
+                    
+                    <td>
+                        <select name="RS UE">
+                            <option value="Off" selected>Off</option>
+                            <option value="Off">Off</option><option value="On">On</option>
+                        </select>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>CueLogoOn_R</td>
+                    <td>string</td>
+                    
+                    <td>
+                        <select name="RS UE">
+                            <option value="Off" selected>Off</option>
+                            <option value="Off">Off</option><option value="On">On</option>
+                        </select>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>CuePipOn_C</td>
+                    <td>string</td>
+                    
+                    <td>
+                        <select name="RS UE">
+                            <option value="Off" selected>Off</option>
+                            <option value="Off">Off</option><option value="On">On</option>
+                        </select>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>CuePipOn_L</td>
+                    <td>string</td>
+                    
+                    <td>
+                        <select name="RS UE">
+                            <option value="Off" selected>Off</option>
+                            <option value="Off">Off</option><option value="On">On</option>
+                        </select>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>CuePipOn_R</td>
+                    <td>string</td>
+                    
+                    <td>
+                        <select name="RS UE">
+                            <option value="Off" selected>Off</option>
+                            <option value="Off">Off</option><option value="On">On</option>
+                        </select>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>DesiredMeshIndex</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="0" 
+                               max="4"
+                               value="0"
+                               step="1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>DesiredMeshMaterial</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="0" 
+                               max="2"
+                               value="0"
+                               step="1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>DesiredMeshOption</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="0" 
+                               max="6"
+                               value="0"
+                               step="1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>LogoStyle_C</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="-1" 
+                               max="1"
+                               value="0"
+                               step="1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>LogoStyle_L</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="-1" 
+                               max="1"
+                               value="0"
+                               step="1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>LogoStyle_R</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="-1" 
+                               max="1"
+                               value="0"
+                               step="1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>PresentationContentType_C</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="0" 
+                               max="1"
+                               value="0"
+                               step="1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>PresentationContentType_L</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="0" 
+                               max="1"
+                               value="0"
+                               step="1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>PresentationContentType_R</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="0" 
+                               max="1"
+                               value="0"
+                               step="1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>TextDarkMode</td>
+                    <td>string</td>
+                    
+                    <td>
+                        <select name="RS UE">
+                            <option value="Off" selected>Off</option>
+                            <option value="Off">Off</option><option value="On">On</option>
+                        </select>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>Use3DPip_C</td>
+                    <td>string</td>
+                    
+                    <td>
+                        <select name="RS UE">
+                            <option value="Off" selected>Off</option>
+                            <option value="Off">Off</option><option value="On">On</option>
+                        </select>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>Use3DPip_L</td>
+                    <td>string</td>
+                    
+                    <td>
+                        <select name="RS UE">
+                            <option value="Off" selected>Off</option>
+                            <option value="Off">Off</option><option value="On">On</option>
+                        </select>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>Use3DPip_R</td>
+                    <td>string</td>
+                    
+                    <td>
+                        <select name="RS UE">
+                            <option value="Off" selected>Off</option>
+                            <option value="Off">Off</option><option value="On">On</option>
+                        </select>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>UpdateMesh</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="0" 
+                               max="1"
+                               value="0"
+                               step="0.1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>CenteralContentType</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="-1000" 
+                               max="1000"
+                               value="0"
+                               step="1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>Cue_Centeral</td>
+                    <td>string</td>
+                    
+                    <td>
+                        <select name="RS UE">
+                            <option value="Off" selected>Off</option>
+                            <option value="Off">Off</option><option value="On">On</option>
+                        </select>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>CueLogoOn</td>
+                    <td>string</td>
+                    
+                    <td>
+                        <select name="RS UE">
+                            <option value="Off" selected>Off</option>
+                            <option value="Off">Off</option><option value="On">On</option>
+                        </select>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>DesiredIndex</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="-1000" 
+                               max="1000"
+                               value="0"
+                               step="1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>DesiredMaterial</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="-1000" 
+                               max="1000"
+                               value="0"
+                               step="1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>DesiredMesh</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="-1000" 
+                               max="1000"
+                               value="0"
+                               step="1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>RS UE</td>
+                    <td>LogoStyle</td>
+                    <td>float</td>
+                    
+                    <td>
+                        <input type="range" 
+                               name="RS UE"
+                               min="-1000" 
+                               max="1000"
+                               value="0"
+                               step="1"
+                               oninput="this.nextElementSibling.textContent=this.value">
+                        <span>0</span>
+                    </td>
+                </tr>
+            
+            </table>
+            <script src="patch_handler.js"></script>
+        </body>
+        </html>
+        
